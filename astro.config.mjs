@@ -1,8 +1,9 @@
-JavaScript
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  // Your GitHub Pages URL
+  // GitHub Pages URL
   site: 'https://at25085.github.io',
+  
+  // comment
   base: '/Personal-Website', 
 });
