@@ -1,0 +1,17 @@
+---
+const { title, description = null } = Astro.props;
+const marginClass = description ? "mb-1" : "mb-3";
+---
+
+<div class="row gx-0 pb-2 justify-content-center hidden-slide"> 
+  <div class="col-12 skillset px-3 h-100">
+    <div class="row align-items-baseline">
+      <div class="col-12 px-4 pt-3">
+        <h3 class={`awardtitle pb-0 ${marginClass}`}>{title}</h3>
+        {description && (
+          <p class="expyr mt-0">{description}</p>
+        )}
+      </div>
+    </div>
+  </div>
+</div>

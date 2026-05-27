@@ -1,0 +1,218 @@
+---
+import '../styles/style.css';
+import SkillCategory from '../components/SkillCategory.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import AwardCard from '../components/AwardCard.astro';
+import ContactCard from '../components/ContactCard.astro';
+
+import { 
+  skillGroups, 
+  experiences, 
+  projects, 
+  technicalAwards,
+  creativeAwards, 
+  contactLinks 
+} from '../data/portfolioData.js';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Navigator Bar-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light p-2 shadow-sm z-3">
+  <div class="container-fluid px-5 mt-1">
+    <a class="navbar-brand text-dark" id="headername" href="#">Alexis Jono Tan</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-pills">
+        <li class="nav-item"><a href="#about" class="nav-link px-3 text-secondary">About</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link px-3 text-secondary">Experience</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link px-3 text-secondary">Projects</a></li>
+        <li class="nav-item"><a href="#awards" class="nav-link px-3 text-secondary">Awards</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link px-3 text-secondary">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Bio Section-->
+<div class="d-flex flex-column" style="height: calc(100vh - 64px);">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5 border-bottom border-1 border-secondary">
+    <div class="row">
+      <div class="col-12 col-lg-11 mx-auto">
+        
+        <p class="ps-2 d-flex align-items-center"><span class="bg-success rounded-circle me-2" style="width: 12px; height: 12px;"></span>Open to Opportunities</p>
+        <h1 class="display-5 fw-bold text-body-emphasis mb-3" id="headliner">Alexis Jono Tan,<br>CS Major<br>@ Georgia Tech</h1>
+        <p class="lead pt-2 pb-3 bio-text">Highly motivated student with a strong work ethic and creative ability. Eager to apply software development and problem-solving skills in an innovative and fast-paced environment.</p>
+        
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
+          <a href="https://www.linkedin.com/in/alexis-tan-2b816a3b7" class="biobn btn btn-primary btn-lg px-4 me-md-2" id="mainbiobtn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="/Alexis_Tan_Resume.pdf" class="biobn btn btn-primary btn-lg px-4 me-md-2" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://github.com/at25085" class="biobn btn btn-primary btn-lg px-4 me-md-2" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--About Me-->
+<div id="about" class="d-flex flex-column">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5 border-bottom border-1 border-secondary">
+    <div class="row">
+      <div class="py-5"></div>
+      
+      <div class="col-12 col-lg-11 mx-auto pt-2">
+        <p class="ps-2 d-flex align-items-center">Skills & Me</p>
+        <h1 class="deschead pb-3">About Me</h1>
+        <p class="descpara hidden-slide">Highly motivated student with a strong work ethic and creative ability. Eager to apply software development and problem-solving skills in an innovative and fast-paced environment.</p>
+        <p class="descpara hidden-slide">Highly motivated student with a strong work ethic and creative ability. Eager to apply software development and problem-solving skills in an innovative and fast-paced environment.</p>
+        <p class="descpara pb-5 hidden-slide">Experienced in full-stack web development and AI/ML</p>
+
+        <div class="row gx-4 gy-4 justify-content-center hidden-slide"> 
+          {skillGroups.map((group) => (
+            <SkillCategory title={group.title} skills={group.skills} />
+          ))}
+        </div>
+        <div class="pt-5"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Experience-->
+<div id="experience" class="d-flex flex-column">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5 border-bottom border-1 border-secondary">
+    <div class="row">
+      <div class="py-5"></div>
+      <div class="col-12 col-lg-11 mx-auto pt-2">
+        <p class="ps-2 d-flex align-items-center">Work and Internships</p>
+        <h1 class="deschead pb-3">Experience</h1>
+        <p class="descpara pb-4 hidden-slide">Worked on blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+        <div class="experience-section">
+        {experiences.map((job) => (
+            <ExperienceCard 
+            company={job.company}
+            dateRange={job.dateRange}
+            role={job.role}
+            description={job.description}
+            skills={job.skills}
+            />
+        ))}
+        </div>
+        <div class="pt-5"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Projects-->
+<div id="projects" class="d-flex flex-column">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5 border-bottom border-1 border-secondary">
+    <div class="row">
+      <div class="py-5"></div>
+      <div class="col-12 col-lg-11 mx-auto pt-2">
+        <p class="ps-2 d-flex align-items-center">My Pride and Joy</p>
+        <h1 class="deschead pb-3">Projects</h1>
+        
+        <div class="row gx-4 gy-4 pt-1 "> 
+          {projects.map((project) => (
+            <ProjectCard 
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            projectUrl={project.projectUrl}
+            />
+          ))}
+        </div> 
+        <div class="pt-5"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Awards-->
+<div id="awards" class="d-flex flex-column">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5 border-bottom border-1 border-secondary">
+    <div class="row">
+      <div class="py-5"></div>
+      <div class="col-12 col-lg-11 mx-auto pt-2">
+        <p class="ps-2 d-flex align-items-center">Accomplishments and All</p>
+        <h1 class="deschead pb-4">Honors & Awards</h1>
+        <p class="descpara pb-0"><strong>Academic Accomplishments.</strong></p>
+
+        <div class="awards-category">
+          {technicalAwards.map((award) => (
+            <AwardCard title={award.title} description={award.description} />
+          ))}
+        </div>
+
+        <p class="descpara pb-0 pt-4 hidden-slide"><strong>Creative Accomplishments.</strong></p>
+
+        <div class="awards-category">
+          {creativeAwards.map((award) => (
+            <AwardCard title={award.title} description={award.description} />
+          ))}
+        </div>
+
+        <div class="pt-5"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Contact-->
+<div id="contact" class="d-flex flex-column">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5 border-bottom border-1 border-secondary">
+    <div class="row">
+      <div class="py-5"></div>
+      
+      <div class="col-12 col-lg-11 mx-auto pt-2">
+        <p class="ps-2 d-flex align-items-center">Get in Touch!</p>
+        <h1 class="deschead pb-3">Contact</h1>
+        <p class="descpara pb-4 hidden-slide">Reach out to me through email, LinkedIn, and GitHub, or save my resume for future opportunities. I am always looking to challenge myself and improve my skills with new opportunities.</p>
+
+        <div class="row gx-4 gy-4 justify-content-center hidden-slide"> 
+          {contactLinks.map((link) => (
+            <ContactCard href={link.href} label={link.label} />
+          ))}
+        </div>
+        <div class="pt-5"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex flex-column">
+  <div class="container px-4 flex-grow-1 d-flex flex-column justify-content-center pb-lg-5">
+    <div class="row">
+      <div class="py-2"></div>
+      <div class="col-12 col-lg-11 mx-auto pt-2">
+        <p class="ps-2 d-flex align-items-center">@2026 Alexis Jono Tan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script is:inline src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>

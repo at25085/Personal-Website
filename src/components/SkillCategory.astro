@@ -1,0 +1,13 @@
+---
+import SkillButton from './SkillButton.astro';
+const { title, skills } = Astro.props;
+---
+
+<div class="col-12 col-sm-6 col-lg-3">
+  <div class="skillset p-3 h-100">
+    <h2 class="text-center pb-4 pt-1 mb-0 fs-4 skillhead">{title}</h2> 
+    <div class="row gy-custom px-2"> 
+      {skills.map((skill) => <SkillButton name={skill} />)}
+    </div>
+  </div>
+</div>

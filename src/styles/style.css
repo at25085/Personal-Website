@@ -1,0 +1,182 @@
+body {
+    font-family: 'Fraunces', serif;
+    background-color: #FBFBFB;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navigator Bar*/
+#headername {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.nav-link {
+    font-size:18px;
+}
+
+@media (max-width: 767px) {
+    #headliner {
+        font-size: 4rem !important; 
+    }
+}
+
+
+/*
+@media (max-width: 768px) {
+    .nav-item {
+        text-align: center;
+    }
+}
+*/
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23212529' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/*hero*/
+#headliner {
+    /* clamp(Minimum Size, Dynamic Size, Maximum Size) */
+    font-size: clamp(2.75rem, 6vw, 5.2rem) !important; 
+    line-height: 1.1 !important;
+}
+
+.bio-text {
+    max-width: 650px !important;
+    line-height: 1.6;
+    font-size: 22px !important;
+}
+
+.biobn {
+    font-size: 18px;
+    background-color: #FBFBFB;
+    border: 1px solid #e2e1da;
+    border-radius: 40px;
+    color: black
+}
+
+.biobn:hover {
+    --bs-btn-hover-bg: #f5f4f2;
+    --bs-btn-hover-border-color: #690203;
+    --bs-btn-hover-color: #000000;
+}
+
+#mainbiobtn {
+    background-color: #970100;
+    color: white;
+    border: 1px solid #690203;
+    border-radius: 40px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#mainbiobtn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.deschead {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.descpara{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.skillset {
+    background-color: #FFFFFF;
+    border: 1px solid #e2e1da;
+    border-radius: 15px;
+}
+
+.skillbtn {
+    background-color: #f5f4f2;
+    border: 1px solid #e2e1da;
+    border-radius: 40px;
+}
+
+.skillhead {
+    font-size: 1.3rem !important;
+}
+
+.greenoutline {
+    border: 1px solid #970100;
+}
+
+.sbhover {
+    background-color: #970100;
+    color: white;
+    border: 1px solid #690203;
+}
+
+.gy-custom {
+    --bs-gutter-y: 1.25rem;
+}
+
+.exphead {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+}
+
+.expyr {
+    font-size: 0.9rem;
+    font-weight:300;
+}
+
+.poshead {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.posdesc {
+    font-size: 1rem !important;
+    font-weight: 300 !important;
+}
+
+.posskill {
+    background-color: #f5f4f2;
+    border: 1px solid #f5f4f2;
+    border-radius: 40px;
+    font-size: 0.85rem;
+}
+
+.viewproject {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    color: black !important;
+}
+
+.awardtitle {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.hoverup{
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hoverup:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hidden-slide {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.show-slide {
+    opacity: 1;
+    transform: translateY(0);
+}
