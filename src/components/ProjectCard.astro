@@ -6,7 +6,11 @@ const { title, description, tags = [], projectUrl = "#" } = Astro.props;
   <div class="skillset p-3 h-100">
     <div class="ps-2 pe-1 py-3">
       <h2 class="exphead mb-3 fs-4">{title}</h2>
-      <p class="posdesc text-break">{description}</p>
+      <ul class="posdesc text-break ps-3 mb-4">
+        {description.map((bullet) => (
+          <li class="mb-2">{bullet}</li>
+        ))}
+      </ul>
       <div class="d-flex flex-wrap gap-2 mb-3">
         {tags.map((tag) => (
           <div class="posskill d-inline-flex justify-content-center align-items-center px-3 py-1">
