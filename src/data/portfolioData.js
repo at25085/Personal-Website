@@ -27,7 +27,7 @@ export const experiences = [
       "Integrated open-source tools like Chart.js to visualize raw river metrics in a dynamic dashboard, enabling early flood-warning capabilities and supporting pre-disaster mitigation efforts",
       "Partnered with the Ocmulgee National Park and Preserve Initiative through participatory design research, engineering data-accessibility tools to support cultural preservation and the establishment of Georgia’s first national park"
       ],
-    skills: ["Python", "Full-Stack Development", "Flask", "JavaScript", "HTML", "CSS", "Agile Methodology", "Chart.js", "Participatory Design"]
+    skills: ["Python", "Full-Stack Development", "Flask", "JavaScript", "HTML", "CSS", "Agile Methodology", "Chart.js", "Participatory Design", "UI/UX", "Data Visualization", "Public Speaking"]
   },
   {
     company: "Valent Asset Management",
@@ -38,7 +38,7 @@ export const experiences = [
       "Built customized trading and backtesting programs using Python/Pandas to evaluate strategy performance, directly optimizing portfolio returns against benchmark metrics",
       "Synthesized 50+ pages of weekly commodities and macroeconomic research from major institutions (Goldman Sachs, Macquarie, BMO, Bloomberg) into concise briefs, streamlining the research pipeline for senior quantitative analysts"
       ],
-    skills: ["Data Analytics", "Data Visualization", "Time Series Analysis", "Python", "Microsoft Word", "Statistical Modeling"]
+    skills: ["Data Analytics", "Data Visualization", "Time Series Analysis", "Python", "Statistical Modeling"]
   },
   {
     company: "Freelance",
@@ -56,24 +56,16 @@ export const experiences = [
 export const projects = [
   {
     title: "Evaluating Carotid Intima-Media Thickness Using Machine Learning",
-    description: "Placeholder",
-    tags: ["PyTorch", "TensorFlow", "Scikit-learn", "Keras", "Pandas", "Numpy", "OpenCV"],
+    description: [
+      "One of top 50 research projects in Georgia chosen for presentation at Georgia Junior Science & Humanities Symposium ",
+      "Engineered machine learning and deep learning pipelines using TensorFlow to automatically measure carotid intima-media thickness from ultrasound scans, achieving 90%+ diagnostic accuracy",
+      "Curated and open-sourced a comprehensive dataset of 2,000+ labeled medical ultrasound scans, enabling future research in computer vision and image segmentation tasks"
+      ],
+    tags: ["PyTorch", "TensorFlow", "Scikit-learn", "Keras", "Pandas", "Numpy", "OpenCV", "Technical Documentation", "Academic Research"],
     projectUrl: "#"
   },
   {
     title: "Project 2",
-    description: "Placeholder",
-    tags: ["Statistical Modeling"],
-    projectUrl: "#"
-  },
-  {
-    title: "Project 3",
-    description: "Placeholder",
-    tags: ["Statistical Modeling"],
-    projectUrl: "#"
-  },
-  {
-    title: "Project 4",
     description: "Placeholder",
     tags: ["Statistical Modeling"],
     projectUrl: "#"
