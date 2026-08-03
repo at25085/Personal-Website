@@ -19,50 +19,62 @@ export const skillGroups = [
 
 export const experiences = [
   {
-    company: "Georgia Tech Research",
-    dateRange: "Jul 2025 - April 2026",
+    company: "Georgia Tech Research Institute",
+    dateRange: "June 2026 - July 2026",
     role: "GTRI Research Intern",
-    description: "stuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuff",
-    skills: ["Statistical Modeling"]
+    description: [
+      "Co-developed a full-stack web application (Python, Flask, HTML/CSS/JS) within a 3-person Agile team, collaborating cross-functionally with a 10+ member hardware team to process and visualize live environmental sensor data from the Ocmulgee River",
+      "Integrated open-source tools like Chart.js to visualize raw river metrics in a dynamic dashboard, enabling early flood-warning capabilities and supporting pre-disaster mitigation efforts",
+      "Partnered with the Ocmulgee National Park and Preserve Initiative through participatory design research, engineering data-accessibility tools to support cultural preservation and the establishment of Georgia’s first national park"
+      ],
+    skills: ["Python", "Full-Stack Development", "Flask", "JavaScript", "HTML", "CSS", "Agile Methodology", "Chart.js", "Participatory Design"]
   },
   {
     company: "Valent Asset Management",
     dateRange: "Jul 2025 - April 2026",
     role: "Quantative Analyst Intern, Metals",
-    description: "stuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuff",
-    skills: ["Statistical Modeling"]
+    description: [
+      "Engineered quantitative trading strategies for base, precious, and minor metals portfolios, leveraging time-series analysis and regression on Bloomberg price data to generate trading signals yielding an 80%+ success rate and 5-10% average PnL",
+      "Built customized trading and backtesting programs using Python/Pandas to evaluate strategy performance, directly optimizing portfolio returns against benchmark metrics",
+      "Synthesized 50+ pages of weekly commodities and macroeconomic research from major institutions (Goldman Sachs, Macquarie, BMO, Bloomberg) into concise briefs, streamlining the research pipeline for senior quantitative analysts"
+      ],
+    skills: ["Data Analytics", "Data Visualization", "Time Series Analysis", "Python", "Microsoft Word", "Statistical Modeling"]
   },
   {
     company: "Freelance",
-    dateRange: "Jul 2025 - April 2026",
+    dateRange: "May 2025 - August 2025",
     role: "Full-Stack Web Developer",
-    description: "stuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuffstuff",
-    skills: ["Statistical Modeling"]
+    description: [
+      "Architected and deployed custom web applications for two foodservice businesses, using Render and Git, independently designing Python/Flask backends and responsive HTML/CSS/JavaScript frontends to establish their online presence",
+      "Drove digital customer engagement by optimizing site visibility and designed responsive UI/UX, successfully growing combined platform traffic from 0 to 200+ monthly active visitors",
+      "Engineered secure B2B onboarding forms for credential intake and integrated a custom contact routing system, streamlining both customer catering inquiries and vendor onboarding"
+      ],
+    skills: ["Python", "HTML", "CSS", "JavaScript", "Git", "Flask", "UI/UX"]
   }
 ];
 
 export const projects = [
   {
-    title: "Project 1",
-    description: "blahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
-    tags: ["Statistical Modeling"], // Add your full tech stack tags here!
-    projectUrl: "#" // Paste your GitHub repository or live URL links here
+    title: "Evaluating Carotid Intima-Media Thickness Using Machine Learning",
+    description: "Placeholder",
+    tags: ["PyTorch", "TensorFlow", "Scikit-learn", "Keras", "Pandas", "Numpy", "OpenCV"],
+    projectUrl: "#"
   },
   {
     title: "Project 2",
-    description: "blahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    description: "Placeholder",
     tags: ["Statistical Modeling"],
     projectUrl: "#"
   },
   {
     title: "Project 3",
-    description: "blahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    description: "Placeholder",
     tags: ["Statistical Modeling"],
     projectUrl: "#"
   },
   {
     title: "Project 4",
-    description: "blahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    description: "Placeholder",
     tags: ["Statistical Modeling"],
     projectUrl: "#"
   }
@@ -71,7 +83,6 @@ export const projects = [
 export const technicalAwards = [
   {
     title: "American Invitational Mathematics Exam (AIME) Qualifier"
-    // No description needed!
   },
   {
     title: "National Merit Scholarship Finalist",
