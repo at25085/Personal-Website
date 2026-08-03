@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     title: "Project 2",
-    description: "Placeholder",
+    description: ["Placeholder"],
     tags: ["Statistical Modeling"],
     projectUrl: "#"
   }
