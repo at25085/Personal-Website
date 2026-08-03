@@ -113,6 +113,6 @@ export const contactLinks = [
   { label: "Email", href: "mailto:alexisjonotan@gmail.com" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/alexis-tan-2b816a3b7" },
   { label: "GitHub", href: "https://github.com/at25085" },
-  { label: "Resume", href: "/Alexis_Tan_Resume.pdf" } 
+  { label: "Resume", href: "Alexis_Tan_Resume.pdf" } 
 ];
 
